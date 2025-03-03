@@ -2491,7 +2491,7 @@ Average NPS in loading: ${numFormat(notes / takenNoteTime, 3)}');
 		}
 
 		// NPS Zone
-		if (showInfoType == "Notes Per Second" && !paused) {
+		if (((showInfoType == "Notes Per Second") || (showInfoType == "Rendered Notes and NPS")) && !paused) {
 			npsMod = bfNpsAdd > 0 || opNpsAdd > 0;
 			bothNpsAdd = bfNpsAdd > 0 && opNpsAdd > 0;
 			if (npsMod) {
